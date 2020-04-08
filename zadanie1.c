@@ -4,13 +4,26 @@
 
 main(){
 	int pocet, min, max;
-	printf("Zadajte kolko ma byt prvkov v poli:");
+	printf("Zadajte kolko ma byt prvkov v poli:\n");
 	scanf("%d", &pocet);
-	printf("Zadajte rozpatie pri nahodnych hodnotach:");
-	printf("Minimum:");
+	printf("Zadajte rozpatie pri nahodnych hodnotach:\n");
+	printf("Minimum:\n");
 	scanf("%d", &min);
-	printf("Maximum:");
+	printf("Maximum:\n");
 	scanf("%d", &max);
 	
 	float pole[pocet];
+	
+	int i;
+	
+	srand(time(NULL));
+	
+	for(i=0; i<pocet; i++){
+		pole[i]=min+(max-min)*(float)rand()/(float)RAND_MAX;
+	}
+	printf("Povodne pole: ");
+	for(i=0; i<pocet; i++){
+		printf("%f  ", pole[i]);
+	}
+	
 	}
