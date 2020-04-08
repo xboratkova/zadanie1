@@ -3,7 +3,9 @@
 #include <stdlib.h>
 
 
-
+void zmen_hodnoty(float *pole1, int pocet1){
+	
+}
 
 
 main(){
