@@ -12,4 +12,5 @@ main(){
 	printf("Maximum:");
 	scanf("%d", &max);
 	
+	float pole[pocet];
 	}
