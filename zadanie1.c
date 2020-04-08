@@ -2,6 +2,10 @@
 #include <time.h>
 #include <stdlib.h>
 
+
+
+
+
 main(){
 	int pocet, min, max;
 	printf("Zadajte kolko ma byt prvkov v poli:\n");
@@ -15,6 +19,7 @@ main(){
 	float pole[pocet];
 	
 	int i;
+	float priemer=0;
 	
 	srand(time(NULL));
 	
@@ -26,4 +31,9 @@ main(){
 		printf("%f  ", pole[i]);
 	}
 	
+	for(i=0; i<pocet; i++){
+		priemer=priemer+pole[i];
+	}
+	priemer=priemer/pocet;
+	printf("\nPriemer: %f", priemer);
 	}
