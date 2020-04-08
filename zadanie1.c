@@ -49,13 +49,19 @@ main(){
 		priemer=priemer+pole[i];
 	}
 	priemer=priemer/pocet;
-	printf("\nPriemer: %f", priemer);
+	printf("\nPriemer: %f\n", priemer);
 	
 	zmen_hodnoty(pole, pocet);
+	float npriemer;
+	for(i=0; i<pocet; i++){
+		npriemer=npriemer+pole[i];
+	}
+	npriemer=npriemer/pocet;
 	
 	printf("Nove pole:  ");
 	for(i=0; i<pocet; i++){
 		printf("%f  ", pole[i]);
 	}
+	printf("\nNovy priemer: %f", npriemer);
 	
 	}
