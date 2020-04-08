@@ -4,7 +4,19 @@
 
 
 void zmen_hodnoty(float *pole1, int pocet1){
-	
+	int i;
+	float zmena;
+	for(i=0; i<pocet1; i++){
+		zmena = (float)rand()/(float)(RAND_MAX);
+		if(i<(pocet1-1)){
+		pole1[i]=pole1[i]-zmena;
+		pole1[i+1]=pole1[i+1]+zmena;
+		}
+		else{
+		pole1[i]=pole1[i]-zmena;
+		pole1[0]=pole1[0]+zmena;
+		}
+	}
 }
 
 
