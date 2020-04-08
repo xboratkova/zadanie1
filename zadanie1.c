@@ -62,6 +62,13 @@ main(){
 	for(i=0; i<pocet; i++){
 		printf("%f  ", pole[i]);
 	}
-	printf("\nNovy priemer: %f", npriemer);
+	printf("\nNovy priemer: %f\n", npriemer);
+	
+	if(priemer=npriemer){
+		printf("Zmena bola uspesna!");
+	}
+	else{
+		printf("Niekde nastala chyba :(");
+	}
 	
 	}
