@@ -50,4 +50,12 @@ main(){
 	}
 	priemer=priemer/pocet;
 	printf("\nPriemer: %f", priemer);
+	
+	zmen_hodnoty(pole, pocet);
+	
+	printf("Nove pole:  ");
+	for(i=0; i<pocet; i++){
+		printf("%f  ", pole[i]);
+	}
+	
 	}
